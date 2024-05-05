@@ -35,7 +35,7 @@ final class MeliTestTests: XCTestCase {
         let useCase = ItemListFactory(httpClient: mockHTTPClient).createUseCase()
         
         // Crear una expectativa para el caso de prueba
-        let expectation = XCTestExpectation(description: "Obtener los datos ")
+        let expectation = XCTestExpectation(description: "Obtener los datos")
         
         // Llamar a la operación asincrónica (GetItemList)
         useCase.getItems(with: "")

@@ -99,7 +99,6 @@ struct ItemDetailView: View {
     func getAttributes() -> [AttributePresentableItem] {
         viewModel.ItemDetailPresentable.attributes
     }
-    
 }
 
 // MARK: - Detail Row View

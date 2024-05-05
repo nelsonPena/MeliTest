@@ -23,8 +23,6 @@ class ItemDetailViewModel: ObservableObject {
     /// El objeto `ItemListPresentableItem` que representa los detalles de el personaje
     let ItemDetailPresentable: ItemListPresentableItem
     
-    private var cancellables = Set<AnyCancellable>()
-    
     /// Inicializa una nueva instancia de `ItemDetailViewModel`.
     ///
     /// - Parameters:
@@ -35,9 +33,4 @@ class ItemDetailViewModel: ObservableObject {
     init(ItemDetailPresentable: ItemListPresentableItem) {
         self.ItemDetailPresentable = ItemDetailPresentable
     }
-    
-    deinit {
-        cancellables.removeAll()
-    }
-    
 }
