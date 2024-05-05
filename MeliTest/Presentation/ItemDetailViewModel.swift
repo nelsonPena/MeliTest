@@ -20,16 +20,13 @@ class ItemDetailViewModel: ObservableObject {
     @Published var goBack: Bool = false
     
     
-    /// El objeto `ItemListPresentableItem` que representa los detalles de el personaje
+    /// El objeto `ItemListPresentableItem` que representa los detalles de el Item
     let ItemDetailPresentable: ItemListPresentableItem
     
     /// Inicializa una nueva instancia de `ItemDetailViewModel`.
     ///
     /// - Parameters:
-    ///   - GetItemListType: Un objeto que implementa `GetItemListType` .
-    ///   - dataProvider: Un objeto `DataProvider` que gestiona las los resultados en cache.
-    ///   - ItemDetailPresentable: El objeto `ItemListPresentableItem` que representa los detalles de el personaje.
-    ///   - errorMapper: Un mapeador que se utiliza para transformar errores en mensajes de error legibles.
+    ///   - ItemDetailPresentable: El objeto `ItemListPresentableItem` que representa los detalles de el item.
     init(ItemDetailPresentable: ItemListPresentableItem) {
         self.ItemDetailPresentable = ItemDetailPresentable
     }

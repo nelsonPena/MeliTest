@@ -23,7 +23,7 @@ final class MeliTestUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Detalle"].exists)
     }
     
-    /// Prueba seleccionar un personaje desde la vista de detalle.
+    /// Prueba seleccionar un Item desde la vista de detalle.
     func testSelctItem() {
         let app = XCUIApplication()
         _ = app.grids.element.waitForExistence(timeout: 1)

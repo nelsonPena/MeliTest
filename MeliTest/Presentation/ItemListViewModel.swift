@@ -35,7 +35,11 @@ class ItemListViewModel: ObservableObject {
     /// Variable de búsqueda por texto.
     @Published var searchText = ""
     
-    
+    /// Inicializa una nueva instancia de `ItemDetailViewModel`.
+    ///
+    /// - Parameters:
+    ///   - getItemListType: El objeto `GetItemListType` el cual  representa los resultados.
+    ///   - errorMapper: El objeto `ItemPresentableErrorMapper` el cual mapea los errores.
     init(getItemListType: GetItemListType,
          errorMapper: ItemPresentableErrorMapper) {
         self.getItemListType = getItemListType
@@ -62,7 +66,7 @@ class ItemListViewModel: ObservableObject {
     }
 }
 
-//MARK: Obtener data red
+//MARK: get data red
 
 extension ItemListViewModel {
     
